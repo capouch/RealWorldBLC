@@ -17,6 +17,7 @@ public class Course {
 	
 	/* Data members above, methods below */
 	
+	// This is a String, String, int, int constuctor
 	public Course (String newTitle, String newTeacher, String newRoom) {
 		students = new Student[MAXSTUDENTS];
 		title = newTitle;
@@ -24,8 +25,20 @@ public class Course {
 		room = newRoom;
 	}
 	
+	// This is a two-string constructor
+	public Course(String newTitle, String newRoom) {
+		students = new Student[MAXSTUDENTS];
+		title = newTitle;
+		room = newRoom;
+	}
+	
 	// Mutator put in for the sake of my CMP112 students
 	public void setStudent(Student newStudent, int whereAt) {
+		// An important test is needed!!!!
+		if (whereAt > ( MAXSTUDENTS -1 )) {
+			System.out.println("You are a major idiot!!");
+			return;
+		}
 		students[whereAt] = newStudent;
 	}
 	

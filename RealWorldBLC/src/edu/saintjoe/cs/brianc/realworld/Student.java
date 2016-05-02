@@ -16,6 +16,7 @@ public class Student {
 		classYr = newClassYr;
 		age = newAge;
 	}
+
 	
 	// Accessors and Mutators for the data members
 	public void setName(String newName) {
