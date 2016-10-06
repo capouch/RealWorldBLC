@@ -13,7 +13,7 @@ public class StudentDriver {
 		// To put data into our private array, we had to write a mutator
 		//  We pass it a filled-in Student record, and our "counter" which is studentCount
 		cmp112.setStudent(nextStudent, (studentCount++));
-		nextStudent = new Student("Jim Ballew", "M", 2, 19);
+		nextStudent = new Student("Jim Ballewski", "M", 2, 19);
 		cmp112.setStudent(nextStudent, studentCount++);
 		nextStudent = new Student("Christine Blackford", "F", 1, 20);
 		cmp112.setStudent(nextStudent, studentCount++);
